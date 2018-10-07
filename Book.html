@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Textbook</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: rgba(0, 0, 0, 0.836);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 400px; /* only for demonstration, should be removed */
+    background-color:rgba(128, 128, 128, 0.377);
+    padding: 20px;
+    color: yellow;
+    
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    color:white;
+    }
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: white;
+    height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+    background-color: grey;
+    
+}
+
+/* Style the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.836);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+<a href="#"> Login </a>       
+<a href=""> Upload book </a>
+
+<header>
+  <h2>Textbook</h2>
+</header>
+
+<section>
+ 
+  <nav>
+    <ul>
+      <li><b><a href="#">Home</b></a>
+        <li><b><a href="#">About/Tos</b></a></li>
+    </li>
+   
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>IP Book X... by ..... </h1>
+     <p>This book talks about............</p>
+
+
+     <br><br><br><a href=""><p><b>Flavors:</b></p></a>
+     <br> IP book X 2 credit course by...
+     <br> IP book X 3 credit course by...
+     <br> IP book X 4 credit course by...
+
+  </article>
+  <a href=""><p>Split</p></a>
+</section>
+
+<footer>
+  <p>Copyright of Suffolk Law Univeristy LIT lab© </p>
+</footer>
+
+</body>
+</html>
