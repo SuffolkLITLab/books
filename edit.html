@@ -72,6 +72,15 @@ footer {
         height: auto;
     }
 }
+  /* moving one thing to another box */
+    #div1, #div2 {
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
 </style>
 </head>
 <body>
@@ -108,16 +117,7 @@ footer {
        <p> Preview </p>
       <button>PDF</button>      <button>ebook</button>
 
-      <style>
-#div1, #div2 {
-    float: left;
-    width: 100px;
-    height: 35px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-}
-</style>
+
 <script>
 function allowDrop(ev) {
     ev.preventDefault();
@@ -137,7 +137,7 @@ function drop(ev) {
 <body>
 
 <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
-    <img src="sample.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
+    <img src="sample.png" draggable="true" ondragstart="drag(event)" id="drag1" width="100" height="100">
 </div>
 
 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
