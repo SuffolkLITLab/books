@@ -56,7 +56,20 @@ section:after {
     background-color: grey;
     
 }
+/*put images next to each other*/
+    * {
+    box-sizing: border-box;
+}
 
+.row {
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 20px;
+}
 /* Style the footer */
 footer {
     background-color: rgba(0, 0, 0, 0.836);
@@ -97,12 +110,19 @@ footer {
   </nav>
   
   <article>
-    <h1>IP Book  by ..... </h1>
-          <img src="IP book image.jpg" alt="IP Book" width="150" height="200">
-     <p>Intellectual Property Law for Business Lawyers<br>is designed as a practical guide for
+      <h1>IP Book  by ..... </h1>
+      <div class="row">
+  <div class="column">
+   <img src="IP book image.jpg" alt="IP Book" width="150" height="200">
+      <p>Intellectual Property Law for Business Lawyers<br>is designed as a practical guide for
         corporate counsel<br>and for business and general practice attorneys.<br>
         Surveying the full spectrum of intellectual property law,<br>
         it discusses the fundamentals of...</p>
+  </div>
+  <div class="column">
+    <img src="Contract law image.jpg" alt="Contract" width="150" height="200">
+  </div>
+      </div>
       
       <br><p><b>Flavors:</b></p>
       <br> <a href="flavor.html">IP book X 2 credit course by...</a>
@@ -112,6 +132,7 @@ footer {
       <div style="float:right"><h2>Contract by ..... </h2>
           <img src="Contract law image.jpg" alt="Contract" width="150" height="200">
       </div>
+      
   </article>
   <a href="https://suffolklitlab.org/books/edit"><p>Create New Flavor</p></a>
 </section>
