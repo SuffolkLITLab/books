@@ -56,6 +56,18 @@ section:after {
     background-color: grey;
     
 }
+    /*put images next to each other*/
+    * {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 20px;
+}
 
 /* Style the footer */
 footer {
@@ -97,8 +109,23 @@ footer {
   </nav>
   
   <article>
-    <h1><a href="https://suffolklitlab.org/books/book">IP Book</h1></a>
-      <img src="IP book image.jpg" alt="IP Book" width="150" height="200">
+     <div class="row">
+  <div class="column">
+      <h1>IP Book  by ..... </h1>
+   <img src="IP book image.jpg" alt="IP Book" width="150" height="200">
+  
+      <br><p><b>Flavors:</b></p>
+      <br> <a href="flavor.html">IP book X 2 credit course by...</a>
+      <br> <a href="flavor2.html">IP book X 3 credit course by...</a>
+      <br> <a href="flavor3.html">IP book X 4 credit course by...</a>
+      <br> <button type="Create New Flavor" onclick="edit.html">Create New Flavor</button>
+  </div>
+  <div class="column">
+      <h2>Contract by ..... </h2>
+    <img src="Contract law image.jpg" alt="Contract" width="150" height="200">
+      <br><br> <button type="Create New Flavor" onclick="edit.html">Create New Flavor</button>
+  </div>
+      </div>
   </article>
 </section>
 
